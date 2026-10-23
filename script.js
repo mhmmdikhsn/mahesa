@@ -1,7 +1,7 @@
 // === MASUKKAN DETAIL KONTAK ANDA HANYA DI DALAM SCRIPT JS INI ===
 // Kontak tidak akan terlihat langsung oleh pengunjung di tampilan web.
 const MY_CONFIG = {
-    whatsappNumber: "6289699423547", // Ubah dengan nomor WA Anda (Format: 62...)
+    whatsappNumber: "6289699413547", // Ubah dengan nomor WA Anda (Format: 62...)
     emailAddress: "albadrioioi22@gmail.com"  // Ubah dengan email Anda
 };
 
