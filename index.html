@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Kreatif - Desain, Gitar & Video</title>
+    
+    <!-- Font & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS External -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="logo">Portfolio<span>.</span></div>
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <!-- Tombol Toggle Dark / Light Mode -->
+        <button id="themeToggle" class="theme-btn" title="Ubah Mode Warna">
+            <i class="fa-solid fa-sun"></i>
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about" class="hero">
+        <div class="hero-container">
+            
+            <!-- Foto Profil -->
+            <div class="profile-frame">
+                <!-- Ganti link gambar di bawah ini dengan foto profil Anda -->
+                <img src="mahes.jpeg" alt="Foto Profil" class="profile-img">
+            </div>
+
+            <div class="hero-content">
+                <span class="badge">Welcome</span>
+                <h1>Hello, I'm <span class="highlight">Mahesa Albadri Ruhiyatna</span></h1>
+                <p>Combining visual creativity in <b>Graphic Design</b>, melodies <b>Gitar</b>, and cinematic storytelling in <b>Videography</b>.</p>
+                
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn primary-btn"><i class="fa-brands fa-whatsapp"></i> Chat WhatsApp</a>
+                    <a href="#skills" class="btn secondary-btn">Check out skills</a>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="social-links">
+                    <span>Follow Me:</span>
+                    <a href="https://instagram.com/albdrihes_" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://tiktok.com/@latte" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://wa.me/6289699423547" target="_blank" title="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2>Main Skills</h2>
+        <div class="skills-grid">
+            
+            <div class="skill-card">
+                <div class="icon graphic"><i class="fa-solid fa-palette"></i></div>
+                <h3>Graphic Design</h3>
+                <p>Branding, Poster, Social Media Feed, Banner, & Illustrator.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="icon guitar"><i class="fa-solid fa-guitar"></i></div>
+                <h3>Guitarist & Musician</h3>
+                <p>Lead/Rhythm Guitar, Musical Arrangements, Acoustic & Electric Sessions.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="icon video"><i class="fa-solid fa-video"></i></div>
+                <h3>Videography</h3>
+                <p>Cinematic Filming, Video Editing, & Color Grading.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact & Form Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p class="subtitle">Please choose your preferred communication channel or send a quick message through the form.</p>
+
+        <div class="contact-container">
+            
+            <!-- Quick Contact Info (Nomor & Email Disembunyikan secara visual) -->
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fa-brands fa-whatsapp icon-wa"></i>
+                    <div>
+                        <h4>WhatsApp Direct</h4>
+                        <!-- Tombol Langsung Tanpa Menampilkan Nomor -->
+                        <button id="btnDirectWa" class="contact-link-btn">Hubungi via WhatsApp</button>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope icon-email"></i>
+                    <div>
+                        <h4>Email Direct</h4>
+                        <!-- Tombol Langsung Tanpa Menampilkan Email -->
+                        <button id="btnDirectEmail" class="contact-link-btn">Kirimkan Email</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form WhatsApp Direct Sender -->
+            <form id="waForm" class="contact-form">
+                <h3>Send a message directly to WhatsApp</h3>
+                
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-group">
+                    <select id="service" required>
+                        <option value="" disabled selected>Choose a service</option>
+                        <option value="Desain Grafis">Graphic Design</option>
+                        <option value="Gitaris / Musik">Guitarist / Musician</option>
+                        <option value="Videografi">Videography & Video Editing</option>
+                        <option value="Proyek Kombinasi">Other / Combined Projects</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="message" rows="4" placeholder="Write the details of your message or project..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn submit-btn">
+                    <i class="fa-brands fa-whatsapp"></i> Send to WhatsApp
+                </button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Mahesa Albadri Ruhiyatna. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript External -->
+    <script src="script.js"></script>
+</body>
+</html>
